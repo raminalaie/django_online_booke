@@ -1,0 +1,27 @@
+{% extends '_bace.html' %}
+{% load static %}
+
+{% block page_title %}home page{% endblock %}
+dir="rtl"
+{% block content %}
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0"
+                                   src="{% static "icons/home.jpg" %}"/></div>
+        <div class="col-lg-5 " dir="rtl">
+            <h1 class="font-weight-light ">نکات شهر کتاب </h1>
+            <h5>نکته:
+                <p>»»برای ورود به شهرکتاب روی ورود کلیک کنید</p>
+                <p>»» برای مشاهده کتاب های پیشنهاد شده حتما ثبت نام ولاگین کنید</p>
+                <p>»» برای اضاف کردن کتاب به پیشنهاد ها باید در سایت لاگین باشید</p>
+                <p>»» هر شخص امکان ویرایش و حذف کتاب های خود را دارد</p>
+                <p>»» در صورت انتشاراطلاعات غلط توسط ادمین دستسی شما گرفته می شود</p>
+
+            </h5>
+            <a class="btn btn-primary" href="{% url "book_list" %}">ورود</a>
+        </div>
+    </div>
+    <br>
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+        <div class="card-body"><h6 class="text-white m-0">این وب سایت برای معرفی کتاب های برتر در زمینه های مختلف ساخته شده است</h6></div>
+    </div>
+{% endblock %}
